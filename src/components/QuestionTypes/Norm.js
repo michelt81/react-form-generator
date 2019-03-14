@@ -13,6 +13,19 @@ import React from 'react';
 */
 
 class Norm extends React.Component{
+
+    renderRemark = (data) => {
+        if(data.remark && data.remark !== ""){
+            return (
+                <p>
+                    <span className="remark">
+                    {data.remark}
+                    </span>
+                </p>
+            );
+        }      
+    }
+    
     render() {
         const {
             data
@@ -20,6 +33,7 @@ class Norm extends React.Component{
         return (
             <form>
                 <h4>{data.naam}</h4>
+                {this.renderRemark(data)}
                 <select name="score">
                     <option disabled selected value> -- select an option -- </option>
                     <option value="0">Conform</option>
@@ -38,9 +52,6 @@ class Norm extends React.Component{
                 <textarea name="lastobservationtext"></textarea>
                 <textarea name="observationtext"></textarea>
                 <textarea name="scoretext"></textarea>
-
-
-
 
             </form>
         );
