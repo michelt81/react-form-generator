@@ -62,11 +62,14 @@ form textarea {
   margin-bottom: 10px;
 }
 
-form textarea {
+form textarea,
+form input[type="text"]:not([hidden]) {
   display: block;
 }
+
 form .radio-group input,
-form .radio-group label{
+form .radio-group label,
+form input[type="checkbox"] {
   margin-right: 10px;
 }
 

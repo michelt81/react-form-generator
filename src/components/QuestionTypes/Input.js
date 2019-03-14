@@ -21,7 +21,7 @@ class Input extends React.Component{
                 <input type="checkbox" name="na"/>
                 <label>Not Applicable</label>
                 <input hidden type="checkbox" name="enable" checked/>
-                <input type="text" name="vale"/>
+                <input type="text" name="value"/>
                 <input type="text" name="lastvalue" hidden/>
             </form>
         );
