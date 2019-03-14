@@ -16,15 +16,13 @@ class Input extends React.Component{
             data
         } = this.props;
         return (
-            <form>{ console.log(data)}
+            <form>
                 <h4>{data.naam}</h4>
-                <label>
-                    Not applicable:
-                    <input
-                        name="na"
-                        type="checkbox"
-                        />
-                </label>
+                <input type="checkbox" name="na"/>
+                <label>Not Applicable</label>
+                <input hidden type="checkbox" name="enable" checked/>
+                <input type="text" name="vale"/>
+                <input type="text" name="lastvalue" hidden/>
             </form>
         );
     }

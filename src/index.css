@@ -75,3 +75,7 @@ form .radio-group label{
   font-size: 12px;
 }
 
+.hidden-textarea  {
+  display:none;
+}
+
