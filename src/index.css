@@ -47,3 +47,31 @@ nav ul li {
   background-color: palegreen;
   border: 1px solid forestgreen;
 }
+
+form, .question {
+  padding: 0 20px 20px;
+  margin: 20px 0;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+form select,
+form .radio-group,
+form input[type="checkbox"],
+form textarea {
+  margin-bottom: 10px;
+}
+
+form textarea {
+  display: block;
+}
+form .radio-group input,
+form .radio-group label{
+  margin-right: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+

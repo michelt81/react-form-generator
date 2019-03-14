@@ -1,4 +1,5 @@
 import React from 'react';
+import Question from './Question';
 
 
 class Form extends React.Component {
@@ -25,7 +26,7 @@ class Form extends React.Component {
                 </div>
             );
         } else {
-            return <p key={index}>{item.naam}</p>
+            return <Question key={index} data={item}/>
         }
     };
 
